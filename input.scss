@@ -1,0 +1,89 @@
+@import 'trig';
+@import 'mixins';
+
+.fa-facebook.long-shadow{
+@include longshadow('2c4372',23,45deg)
+}
+.fa-twitter.long-shadow{
+@include longshadow('0081b2',23,108deg)
+}
+ 
+.fa-pinterest-p.long-shadow{
+@include longshadow('97191e',23,215deg)
+}
+
+.fa-linkedin.long-shadow{
+@include longshadow('365887',23,315deg)
+}
+.fa-youtube.long-shadow{
+@include longshadow('bf2626',23,0deg)
+}
+.fa-rss.long-shadow{
+@include longshadow('bf4c00',23,0)
+}
+.fa-tumblr.long-shadow{
+@include longshadow('20374b',23,0)
+}
+.fa-vine.long-shadow{
+@include longshadow('008f6b',23,0)
+}
+
+.fa-envelope.long-shadow{
+@include longshadow('a00000',23,$pi/2)
+}
+
+.fa-instagram.long-shadow{
+@include longshadow('6a524a',23,$pi/2)
+}
+
+.fa-reddit-alien.long-shadow{
+@include longshadow('767676',23,$pi/2)
+}
+
+.fa-google-plus.long-shadow{
+@include longshadow('bb0101',23,$pi/2)
+}
+
+
+
+.fa-facebook.gradientbkg{
+	@include gradientbkg('3b5998','2c4372')
+}
+.fa-twitter.gradientbkg{
+	@include gradientbkg('00aced','0081b2')
+}
+.fa-pinterest-p.gradientbkg{
+	@include gradientbkg('C92228','97191e')
+}
+.fa-linkedin.gradientbkg{
+@include gradientbkg('4875B4','365887')
+}
+.fa-youtube.gradientbkg{
+@include gradientbkg('FF3333','bf2626')
+}
+.fa-rss.gradientbkg{
+@include gradientbkg('FF6600','bf4c00')
+}
+.fa-tumblr.gradientbkg{
+@include gradientbkg('2B4964','20374b')
+}
+.fa-vine.gradientbkg{
+@include gradientbkg('00bf8f','008f6b')
+}
+
+.fa-envelope.gradientbkg{
+@include gradientbkg('D50000','a00000')
+}
+
+.fa-instagram.gradientbkg{
+@include gradientbkg('8D6E63','6a524a')
+}
+
+.fa-reddit-alien.gradientbkg{
+@include gradientbkg('9E9E9E','767676')
+}
+
+.fa-google-plus.gradientbkg{
+@include gradientbkg('F90101','bb0101')
+}
+
