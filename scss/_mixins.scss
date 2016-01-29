@@ -6,7 +6,7 @@ $i:0;
 	@if ($i < $length){
 		$shadow: $shadow + round($i*cos($direction)) + 'px ' + round($i*sin($direction)) + 'px '  + '0px ' +  '#' + $color + ', ';
 	}
-}	else{
+	else{
 		$shadow: $shadow + round($i*cos($direction)) + 'px ' + round($i*sin($direction)) + 'px '  + '0px ' +  '#' + $color;
 	}
 text-shadow:unquote($shadow)
