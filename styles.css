@@ -1,0 +1,126 @@
+/*-----------Icon Colors/Background----------------*/
+.fa {
+	font-size:30px;
+	line-height:inherit;
+	/*Use to override all icon colors for uniform look*/
+	color:;
+	background:;
+	overflow:hidden;
+	background-blend-mode: multiply;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition:all 2s ease;
+}
+.uniform {
+	color:white !important;
+	background-color:#FF5722 !important;
+}
+.transparent{
+	background:transparent !important;
+	color:white !important;
+}
+
+/*-----------Background Shapes----------*/
+/*Font Size and Width/Height should be the same size to keep the icon centered*/
+.circle{
+	font-size:30px;
+	border-radius:50%;
+	width:30px;
+	height:30px;
+	text-align:center;
+	padding:7px;
+	
+}
+.square {
+	font-size:30px;
+	width:30px;
+	height:30px;
+	text-align:center;
+	padding:6px;
+}
+.bezel{
+	border: 2.5px solid;
+	border-style:outset;
+}
+.rounded{
+	font-size:30px;
+	text-align:center;
+	width:30px;
+	height:30px;
+	border-radius:15px;
+	padding:7px;
+}
+.shadow{
+	text-shadow: 0px 3px 0px #b2a98f,
+    3px 7px 2px rgba(0,0,0,0.5),
+	4px 10px 4px rgba(0,0,0,.25);
+	font-size:25px;
+	padding:11px;
+	width:25px;
+	height:25px;
+                
+}
+
+/*------------Icon Specific Colors------*/
+.fa-facebook{
+	color:white;
+	background:#3b5998;
+	border-color: rgba(59,89,152,.3);
+
+}
+.fa-twitter{
+	color:white;
+	background:#00aced;
+	border-color: rgba(0,172,237.3);
+}
+.fa-pinterest-p{
+	color:white;
+	background:#C92228;
+	border-color:rgba(201,34,40,.3);
+	text-shadow:rgba(201,34,40,.3) ;
+}
+.fa-linkedin{
+	color:white;
+	background:#4875B4;
+	border-color: rgba(72,117,180,.3);
+}
+.fa-youtube{
+	color:white;
+	background:#FF3333;
+	border-color: rgba(255,51,51,.3);
+}
+.fa-rss{
+	color:white;
+	background:#FF6600;
+	border-color: rgba(255,51,51,.3);
+}
+
+.fa-tumblr{
+	color:white;
+	background:#2B4964;
+	border-color:rgba(43,73,100,.3);
+}
+.fa-vine{
+	color:white;
+	background:#00bf8f;
+	border-color:rgba(0,191,143,.3) ;
+}
+.fa-envelope{
+	color:white;
+	background:#D50000;
+	border-color: rgba(46,204,113,.3);
+}
+.fa-reddit-alien{
+	color:white;
+	background:#9E9E9E;
+	border-color: ;
+}
+.fa-instagram{
+	color:white;
+	background:#8D6E63;
+	border-color: ;
+}
+.fa-google-plus{
+	color:white;
+	background-color: #F90101;
+}
