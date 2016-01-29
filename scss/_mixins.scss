@@ -6,7 +6,7 @@ $i:0;
 	@if ($i < $length){
 		$shadow: $shadow + round($i*cos($direction)) + 'px ' + round($i*sin($direction)) + 'px '  + '0px ' +  '#' + $color + ', ';
 	}
-	else{
+}	else{
 		$shadow: $shadow + round($i*cos($direction)) + 'px ' + round($i*sin($direction)) + 'px '  + '0px ' +  '#' + $color;
 	}
 text-shadow:unquote($shadow)
@@ -20,5 +20,4 @@ text-shadow:unquote($shadow)
 	background: unquote(-moz-linear-gradient(-45deg, unquote('#' + $color1) 0%, unquote('#' + $color2) 50%, unquote('#' + $color1) 52%, unquote('#' + $color2) 100%)); // FF3.6-15 
 	background: unquote(-webkit-linear-gradient(-45deg, unquote('#' + $color1) 0%, unquote('#' + $color2) 50%, unquote('#' + $color1) 52%, unquote('#' + $color2) 100%)); // Chrome10-25,Safari5.1-6 
 	background: unquote(linear-gradient(135deg, unquote('#' + $color1) 0%, unquote('#' + $color2) 50%, unquote('#' + $color1) 52%, unquote('#' + $color2) 100%)); // W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
-	background-image: unquote(linear-gradient(135deg, unquote('#' + $color1) 0%, unquote('#' + $color2) 50%, unquote('#' + $color1) 52%, unquote('#' + $color2) 100%)); 
 }
