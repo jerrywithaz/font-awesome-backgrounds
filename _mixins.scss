@@ -1,0 +1,24 @@
+//For the Long Shadow
+@mixin longshadow($color,$length,$direction){
+$shadow:'';
+$i:0;
+@for $i from 0 to $length{
+	@if ($i < $length){
+		$shadow: $shadow + round($i*cos($direction)) + 'px ' + round($i*sin($direction)) + 'px '  + '0px ' +  '#' + $color + ', ';
+	}
+}	else{
+		$shadow: $shadow + round($i*cos($direction)) + 'px ' + round($i*sin($direction)) + 'px '  + '0px ' +  '#' + $color;
+	}
+text-shadow:unquote($shadow)
+}
+
+//This mixin allows for you to set a 135degree linear gradient for the background using 2 colors
+@mixin gradientbkg($color1,$color2){
+	
+	//Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b5998+0,2c4372+50,3b5998+50,2c4372+100 */
+	background: unquote('#' + $color1); /* Old browsers */
+	background: unquote(-moz-linear-gradient(-45deg, unquote('#' + $color1) 0%, unquote('#' + $color2) 50%, unquote('#' + $color1) 52%, unquote('#' + $color2) 100%)); // FF3.6-15 
+	background: unquote(-webkit-linear-gradient(-45deg, unquote('#' + $color1) 0%, unquote('#' + $color2) 50%, unquote('#' + $color1) 52%, unquote('#' + $color2) 100%)); // Chrome10-25,Safari5.1-6 
+	background: unquote(linear-gradient(135deg, unquote('#' + $color1) 0%, unquote('#' + $color2) 50%, unquote('#' + $color1) 52%, unquote('#' + $color2) 100%)); // W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
+	background-image: unquote(linear-gradient(135deg, unquote('#' + $color1) 0%, unquote('#' + $color2) 50%, unquote('#' + $color1) 52%, unquote('#' + $color2) 100%)); 
+}
